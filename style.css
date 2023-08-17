@@ -1,9 +1,10 @@
 :root{
     font-family: "Roboto", 'sans-sherif';
+    
 }
 
 body{ 
-    background: linear-gradient( 90deg, rgb(112, 18, 174) 0%, rgb(251, 92, 124) 50%, rgb(252, 150, 8) 100% );
+    background: linear-gradient( 90deg, rgb(112, 18, 174) 0%, rgb(251, 92, 124) 50%, rgb(252, 150, 8) 100% ) ;
     background-size: cover;
     height: 100vh; 
     margin: 0;
@@ -44,7 +45,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
-    width: 100%;
+    width: inherit;
     padding: 0.5rem;
     bottom: 0;
     margin-top: auto;
@@ -130,15 +131,6 @@ footer{
 
 }
 
-/* .req-projects{
-    background-color:rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 1);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    border-radius: 5px;
-    padding: 0.8rem;
-
-} */
 
 .new-project{
     margin: 0 0.5rem;
@@ -167,8 +159,7 @@ footer{
     padding: 0.5rem;
     border: none;
     outline: none;
-    flex: 2;
-    
+    flex: 2;    
 }
 
 .project-name-input::placeholder, .task-name-input::placeholder{
@@ -264,20 +255,20 @@ select:focus, input[type=date]:focus{
     outline: none;
 }
 
-
-input[type=date]{
-    filter: invert(1);
-    
-}
-
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {
     cursor: pointer;
     margin:0;
+    background-image: url("./images/calender.png");
     
 }
+
+
 input[type=date]::-webkit-datetime-edit {
-    display:none;
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+    color: white;
 }
 
 
@@ -350,10 +341,10 @@ button{
     cursor: pointer;
 }
 
+
 .project{
-    display: flex;
-    justify-content: space-between;
-    
+    display: grid;
+    grid-template-columns: 10fr 1fr;
 }
 
 .trash-project{
@@ -365,16 +356,26 @@ button{
     margin: 0;
     width: 90%;
     padding: 3px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
 }
+
+.task{
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+
+}
+
+.task-info-form{
+    overflow: overlay;
+}
+
+
 
 [contenteditable]:empty::before {
     width: 90%;
 
-}
 
-footer{
-    /* position: absolute;
-    bottom: 0; */
 }
 
 .active{
@@ -383,5 +384,16 @@ footer{
 
 .checked{
     background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+
+@media (max-width: 700px) {
+
+    #content{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
 }
