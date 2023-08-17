@@ -62,11 +62,8 @@ function renderTasks(){
     let taskContainer = document.getElementById("task-container"); 
     taskContainer.textContent = "";
     let activeProject = document.querySelector(".active").getAttribute("data-project");
-    // console.log(activeProject)
     let tasks = sortArrayDate(activeProject)
     for (const task of tasks) {
-        console.log(tasks)
-        // let projectID = task.projectid
         const taskDiv = myTaskAll(task)
         taskContainer.append(taskDiv)
 
@@ -77,7 +74,6 @@ function sortArrayDate(projectID){
 
     let todolists = Storage.getTodoList();
     let tasks = todolists.findProject(projectID).getTasks();
-    console.log(tasks);
 
     let unchecked = []        
     tasks.forEach(task => {
