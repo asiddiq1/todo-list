@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/067340eff9.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>Todo List</header>
+        <div class="sidebar">
+            <div class="project-title">projects</div>
+            <div class="project-container" id="project-container">
+                <!-- <div class="project req-projects" id="inbox">Inbox</div>
+                <div class="project req-projects" id="today">Today</div>
+                <div class="project req-projects" id="this-week">This Week</div>
+                <div class="project active" data-project="project-01">
+                    <p class="project-name">Home Improvement</p>
+                    <img src="images/trash.png" alt="trash" class="trash-project">
+                </div>
+                <div class="project" data-project="project-02">
+                    <p class="project-name">Finances</p>
+                    <img src="images/trash.png" alt="trash" class="trash-project">
+                </div>
+                <div class="project" data-project="project-03">
+                    <p class="project-name">Career</p>
+                    <img src="images/trash.png" alt="trash" class="trash-project">
+                </div> -->
+            </div>
+            <div id="new-project" class="new-project">+ new project</div>
+            <form action="submit" class="new-project-form" id="new-project-form">
+                <input type="text" placeholder="project name" class="project-name-input" id="project-name-input">
+                <button type="submit" class="project-submit" id="project-submit">Submit</button>
+            </form>
+        </div>
+        <div class="taskbar">
+            <div class="task-legend">
+                <div class="task-title">task</div>
+                <div class="priority-title">priority</div>
+                <div class="due-title">due</div>
+            </div>
+            <div class="task-container" id="task-container">
+                <!-- <div class="mytask">
+                    <div class="task" data-task="task-01">
+                        <input name="checkbox" class="checkbox" type="checkbox">
+                        <p class="task-info">Today I plan to go to the store and buy cookies, milk, yogurt, bananas.</p>
+                    </div>
+                    <select name="priority">
+                        <option value="none">none</option>
+                        <option value="low">low</option>
+                        <option value="medium">medium</option>
+                        <option value="high">high</option>
+                    </select>
+                    <div class="due-date">2023-08-12</div>
+                    <input type="date" class="datepicker" class="date"/>
+                    <img src="images/trash.png" alt="trash" class="trash-task">
+                </div>
+                <div class="mytask">
+                    <div class="task" data-task="task-02">
+                        <input name="checkbox" class="checkbox" type="checkbox">
+                        <p class="task-info">Clean my room</p>
+                    </div>
+                    <select name="priority">
+                        <option value="none">none</option>
+                        <option value="low">low</option>
+                        <option value="medium">medium</option>
+                        <option value="high">high</option>
+                    </select>
+                    <div class="due-date">2023-08-12</div>
+                    <input type="date" class="datepicker" class="date"/>
+                    <img src="images/trash.png" alt="trash" class="trash-task">
+                </div> -->
+            </div>
+            <div id="new-task" class="new-task">+ new task</div>
+            <form action="" class="new-task-form" id="new-task-form">
+                <div class="task-info-form">
+                    <input class="checkbox-form" id="checkbox-form" type="checkbox">
+                    <input type="text" placeholder="new task" class="task-name-input" id="task-name-input">
+                </div>
+                <select name="priority-form" id="priority-form">
+                    <option value="none">none</option>
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+
+                <div class="due-date-form">
+                    <div class="date-form" id="date-form"></div>
+                    <input type="date" class="datepicker-form" id="date-form-picker"/>
+                </div>
+                <button class="task-submit" id="task-submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">© asiddiq1 &nbsp;<a href="https://github.com/asiddiq1" target="_blank">
+        <i class="fa-brands fa-github" aria-hidden="true"></i></a></footer>
+
+    
+</body>
+</html>
