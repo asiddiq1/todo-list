@@ -382,17 +382,27 @@ function createTask(projectID, taskID, checkboxValue, taskInfoInput, taskDiv){
 
 
 function createDatePicker(projectID, taskID){
+
+    const datePickerToggle = document.createElement("span");
+    datePickerToggle.className = "date-picker-toggle"
+
+    const calendar =  document.createElement("img");
+    calendar. className = "calendar";
+    calendar.src = "./images/calender.png";
+
     const datePicker = document.createElement("input");
     datePicker.type = "date";
-    datePicker.className = "datepicker";
+    datePicker.className = "datepicker-form";
     datePicker.value = new Date().toISOString().slice(0, 10);
     
     datePicker.addEventListener("change", (e) => {
-        e.target.previousElementSibling.textContent = e.target.value;
+        console.log("change");
+        e.target.parentNode.previousElementSibling.textContent = e.target.value;
         Storage.updateDate(projectID, taskID, e.target.value);
     });
 
-    return datePicker;
+    datePickerToggle.append(calendar, datePicker);
+    return datePickerToggle;
 
 }
 
