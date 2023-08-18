@@ -395,6 +395,10 @@ button{
         
     }
 
+    .new-task-form{
+        grid-template-columns: (auto-fit, minmax(150px, 1fr))
+    }
+
    
 
 }
