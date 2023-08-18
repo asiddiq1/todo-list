@@ -255,6 +255,7 @@ select:focus, input[type=date]:focus{
     outline: none;
 }
 
+
 input[type=date]::-webkit-inner-spin-button,
 input[type=date]::-webkit-calendar-picker-indicator {
     cursor: pointer;
@@ -263,12 +264,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
     
 }
 
-
 input[type=date]::-webkit-datetime-edit {
     display: none;
     visibility: hidden;
     -webkit-appearance: none;
-    color: white;
+    color: transparent;
 }
 
 
@@ -356,21 +356,15 @@ button{
     margin: 0;
     width: 90%;
     padding: 3px;
+
+}
+
+.task, .project-name{
     overflow-wrap: break-word;
     overflow-y: scroll;
-}
-
-.task{
-    overflow-wrap: break-word;
-    overflow-y: scroll;
+    overflow-x: hidden;
 
 }
-
-.task-info-form{
-    overflow: overlay;
-}
-
-
 
 [contenteditable]:empty::before {
     width: 90%;
@@ -388,12 +382,19 @@ button{
 }
 
 
-@media (max-width: 700px) {
+
+@media (min-width: 300px) and (max-width: 700px) {
 
     #content{
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+    #task-name-input{
+        width: 100%;
+        
+    }
+
+   
 
 }
