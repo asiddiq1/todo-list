@@ -316,13 +316,16 @@ select, .trash-task{
     cursor: pointer;
 }
 
+select::-ms-expand, [contenteditable]::-ms-expand{
+    display: none;
+}
+
+
 .new-task-form{
     background-color:rgba(255, 255, 255, 0.4);
-    /* display: grid; */
     grid-template-columns: 12fr 2fr 4fr 2fr;
     align-items: center;
     padding: 0.4rem;
-    /* padding-left: 0.5rem; */
     margin: 0px 8px;
     border-radius: 5px;
     color: white;
