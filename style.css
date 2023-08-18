@@ -316,8 +316,8 @@ select, .trash-task{
     cursor: pointer;
 }
 
-select::-ms-expand, [contenteditable]::-ms-expand{
-    display: none;
+[contenteditable]{
+    outline: 0px solid transparent;
 }
 
 
