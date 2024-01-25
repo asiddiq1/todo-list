@@ -1,429 +1,401 @@
-:root{
-    font-family: "Roboto", 'sans-sherif';
-    
+:root {
+  font-family: "Roboto", "sans-sherif";
 }
 
-body{ 
-    background: linear-gradient( 90deg, rgb(112, 18, 174) 0%, rgb(251, 92, 124) 50%, rgb(252, 150, 8) 100% ) ;
-    background-size: cover;
-    height: 100vh; 
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-
+body {
+  background: linear-gradient(110deg, rgb(182 57 183) 0%, rgb(33 173 175) 90%);
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
-
-#content{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+#content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
-
-
-header{
-    color: rgb(155, 13, 143);
-    background-color:rgba(255, 255, 255, 0.5);
-    margin: 0;
-    height: 4rem;
-    font-size: 1.4rem;
-    font-weight: bold;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", 'sans-sherif';
-    letter-spacing: 1px;
-    grid-column: 1 / 3;
+header {
+  color: rgb(155, 13, 143);
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  height: 4rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", "sans-sherif";
+  letter-spacing: 1px;
+  grid-column: 1 / 3;
 }
 
-
-footer{
-    color: rgb(155, 13, 143);
-    background-color:rgba(255, 255, 255, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.1rem;
-    width: inherit;
-    padding: 0.5rem;
-    bottom: 0;
-    margin-top: auto;
+footer {
+  color: rgb(155, 13, 143);
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  width: inherit;
+  padding: 0.5rem;
+  bottom: 0;
+  margin-top: auto;
 }
 
-.sidebar, .taskbar{
-    padding: 0.5rem;
+.sidebar,
+.taskbar {
+  padding: 0.5rem;
 }
 
-
-.task-legend{
-
-    display: grid;
-    grid-template-columns: 12fr 3fr 3fr 1fr 1fr;
-    color: rgba(255, 255, 255, 0.8);
-    /* background-color:rgba(255, 255, 255, 0.5); */
+.task-legend {
+  display: grid;
+  grid-template-columns: 12fr 3fr 3fr 1fr 1fr;
+  color: rgba(255, 255, 255, 0.8);
+  /* background-color:rgba(255, 255, 255, 0.5); */
 }
 
-.task-title{
-    text-align: center;
+.task-title {
+  text-align: center;
 }
 
-
-.project-title{
-    text-align: center;
-    color: rgba(255, 255, 255, 0.5);
-    /* background-color:rgba(255, 255, 255, 0.5); */
+.project-title {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  /* background-color:rgba(255, 255, 255, 0.5); */
 }
 
-.project-container, .task-container{
-    display: grid;
-    gap: 5px 0px;
-    padding: 0.5rem;
-    padding-bottom: 5px;
-
-
+.project-container,
+.task-container {
+  display: grid;
+  gap: 5px 0px;
+  padding: 0.5rem;
+  padding-bottom: 5px;
 }
 
-
-.project, .new-project{
-    background-color:rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 1);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    border-radius: 5px;
-
+.project,
+.new-project {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 
-.project, .new-project{
-    padding: 0.7rem;
+.project,
+.new-project {
+  padding: 0.7rem;
 }
 
-
-.mytask{
-    background-color:rgba(255, 255, 255, 0.4);
-    display: grid;
-    grid-template-columns: 12fr 3fr 3fr 1fr 1fr;
-    align-items: center;
-    padding: 0.4rem;
-    color: rgba(255, 255, 255, 1);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    border-radius: 5px;
+.mytask {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: grid;
+  grid-template-columns: 12fr 3fr 3fr 1fr 1fr;
+  align-items: center;
+  padding: 0.4rem;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
 }
 
-.new-task{
-    background-color:rgba(255, 255, 255, 0.4);
-    padding: 0.7rem;
-    padding-left: 1.2rem;
-    margin: 0px 8px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    color: white;
-    font-size: 1.1rem;
+.new-task {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 0.7rem;
+  padding-left: 1.2rem;
+  margin: 0px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
 }
 
-.task{
-    display: flex;
-    gap: 10px;
-    font-size: 1rem;
-    align-items: center;
-
+.task {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+  align-items: center;
 }
 
-
-.new-project{
-    margin: 0 0.5rem;
-    background-color:rgba(255, 255, 255, 0.3);   
+.new-project {
+  margin: 0 0.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 /* project form */
 
-.new-project-form{
-    background-color:rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 1);
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    border-radius: 5px; 
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    /* display: flex; */
-    gap: 5px;
-    display: none;
+.new-project-form {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+  /* display: flex; */
+  gap: 5px;
+  display: none;
 }
 
-.project-name-input, .task-name-input{
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    padding: 0.5rem;
-    border: none;
-    outline: none;
-    flex: 2;    
+.project-name-input,
+.task-name-input {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  flex: 2;
 }
 
-.project-name-input::placeholder, .task-name-input::placeholder{
-    color: rgb(154, 43, 145);
-    font-size: 1rem;
+.project-name-input::placeholder,
+.task-name-input::placeholder {
+  color: rgb(154, 43, 145);
+  font-size: 1rem;
 }
 
-.project-submit{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    border-radius: 5px;
-    padding: 5px 50px;
-    font-size: 1rem;
-
+.project-submit {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 50px;
+  font-size: 1rem;
 }
 
 /* checkbox icon */
 
-input[type=checkbox]{
-    width: 1.5rem;
-    height: 1.5rem;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    background: none;
-    border: 0;
-    outline: 0;
-    flex-grow: 0;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition:  300ms;
-    cursor: pointer;
-  }
-
-  input[type=checkbox]:checked {
-    background-color: rgba(255, 255, 255, 0.2);
+input[type="checkbox"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  outline: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: 300ms;
+  cursor: pointer;
 }
 
-input[type=checkbox]::before {
-    content: "";
-    color: transparent;
-    display: block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    border: 0;
-    background-color: transparent;
-    background-size: contain;
-    box-shadow: inset 0 0 0 2px rgb(252, 150, 8);
-  }
-
-input[type=checkbox]:checked::before {
-    box-shadow: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: inset 0 0 0 2px rgb(252, 150, 8);
-  }
-
-  /* IE */
-
-input[type=checkbox]::-ms-check {
-    content: "";
-    color: transparent;
-    display: block;
-    width: inherit;
-    height: inherit;
-    border-radius: inherit;
-    border: 0;
-    background-color: transparent;
-    background-size: contain;
-    box-shadow: inset 0 0 0 2px red;
-  }
-  
-  input[type=checkbox]:checked::-ms-check {
-    box-shadow: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
-  }
-
-
-select{
-    background-color: transparent;
-    border: none;
-    font-size: 1rem;
-    color: white;
-    -webkit-appearance: none;
-    
+input[type="checkbox"]:checked {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-select *{
-    color: black;
+input[type="checkbox"]::before {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  border: 0;
+  background-color: transparent;
+  background-size: contain;
+  box-shadow: inset 0 0 0 2px rgb(252, 150, 8);
 }
 
+input[type="checkbox"]:checked::before {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(252, 150, 8);
+}
 
+/* IE */
+
+input[type="checkbox"]::-ms-check {
+  content: "";
+  color: transparent;
+  display: block;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  border: 0;
+  background-color: transparent;
+  background-size: contain;
+  box-shadow: inset 0 0 0 2px red;
+}
+
+input[type="checkbox"]:checked::-ms-check {
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  -webkit-appearance: none;
+}
+
+select * {
+  color: black;
+}
 
 /* datepicker, priority, trash */
 
-
-select:focus{
-    outline: none;
+select:focus {
+  outline: none;
 }
-
 
 .date-picker-toggle {
-    display: inline-block;
-    position: relative;
-    width: 15px;
-    height: 15px;
-  }
-  .calendar {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .datepicker-form {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
-    box-sizing: border-box;
-  }
-  .datepicker-form::-webkit-calendar-picker-indicator {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-  }
-
-
-
-.due-date, .date-form{
-    font-size: 1rem;
-    color: white;
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.calendar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-
-.trash-task, .due-date, .due-title, .date-form{
-    justify-self: center;
+.datepicker-form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.datepicker-form::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
 
-
-.date, #date-form-picker{
-    padding: 0;
-    justify-self: start;
-    font-size: 1.1rem;
-    flex-shrink: 0;
+.due-date,
+.date-form {
+  font-size: 1rem;
+  color: white;
 }
 
-select, .trash-task{
-    cursor: pointer;
+.trash-task,
+.due-date,
+.due-title,
+.date-form {
+  justify-self: center;
 }
 
-
-.new-task-form{
-    background-color:rgba(255, 255, 255, 0.4);
-    grid-template-columns: 12fr 2fr 4fr 2fr;
-    align-items: center;
-    padding: 0.4rem;
-    margin: 0px 8px;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.1rem;
-    display: none;
+.date,
+#date-form-picker {
+  padding: 0;
+  justify-self: start;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
-.task-info-form{
-    display: flex;
-    gap: 5px;
+select,
+.trash-task {
+  cursor: pointer;
 }
 
-#priority-form{
-    justify-self: center;
-    margin-left: 1rem;
+.new-task-form {
+  background-color: rgba(255, 255, 255, 0.4);
+  grid-template-columns: 12fr 2fr 4fr 2fr;
+  align-items: center;
+  padding: 0.4rem;
+  margin: 0px 8px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  display: none;
 }
 
-.task-submit{
-    color: white;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    font-size: 1rem;
-    width: auto;
-
+.task-info-form {
+  display: flex;
+  gap: 5px;
 }
 
-.due-date-form{
-    display: flex;
-    align-items: center;
-    justify-self: center;
-    gap: 5px;
+#priority-form {
+  justify-self: center;
+  margin-left: 1rem;
 }
 
-button{
-    cursor: pointer;
+.task-submit {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  width: auto;
 }
 
-
-.project{
-    display: grid;
-    grid-template-columns: 10fr 1fr;
+.due-date-form {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 5px;
 }
 
-.trash-project{
-    align-self: center;
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
 
-.task-info, .project-name{
-    margin: 0;
-    width: 90%;
-    padding: 3px;
-
+.project {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
 }
 
-.task, .project-name{
-    overflow-wrap: break-word;
-    overflow-y: auto;
-    overflow-x: hidden;
+.trash-project {
+  align-self: center;
+  cursor: pointer;
+}
 
+.task-info,
+.project-name {
+  margin: 0;
+  width: 90%;
+  padding: 3px;
+}
+
+.task,
+.project-name {
+  overflow-wrap: break-word;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 [contenteditable]:empty::before {
-    width: 90%;
-
-
+  width: 90%;
 }
 
-.active{
-    background-color: rgba(255, 255, 255, 0.3);
+.active {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
-.checked{
-    background-color: rgba(255, 255, 255, 0.1);
-
+.checked {
+  background-color: rgba(255, 255, 255, 0.1);
 }
-
-
 
 @media (min-width: 300px) and (max-width: 700px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #task-name-input {
+    width: 100%;
+  }
 
-    #content{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-    #task-name-input{
-        width: 100%;
-        
-    }
-
-    .new-task-form{
-        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
-        gap: 5px;
-    }
-
-
+  .new-task-form {
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 5px;
+  }
 }
