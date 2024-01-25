@@ -1,53 +1,51 @@
-export default class Task{
+export default class Task {
+  constructor(task_checked, taskInfo, priority, date, taskID, projectid) {
+    //create task
+    this.task_checked = task_checked;
+    this.taskInfo = taskInfo;
+    this.priority = priority;
+    this.date = date;
+    this.taskID = taskID;
+    this.projectid = projectid;
+  }
 
-    constructor(task_checked, taskInfo, priority, date, taskID, projectid) { //create task
-        this.task_checked = task_checked
-        this.taskInfo = taskInfo
-        this.priority = priority
-        this.date = date
-        this.taskID = taskID
-        this.projectid = projectid
-      }
-      
-      setTask(taskID){
-        this.taskID = taskID
-      }
+  setTask(taskID) {
+    this.taskID = taskID;
+  }
 
-      getTask(){
-        return this.taskID
-      }
+  getTask() {
+    return this.taskID;
+  }
 
-      setDate(date){
-        this.date = date
-      }
+  setDate(date) {
+    this.date = date;
+  }
 
-      getDate(){
-        return this.date
-      }
+  getDate() {
+    return this.date;
+  }
 
-      setPriority(priority){
-        this.priority = priority
-      }
+  setPriority(priority) {
+    this.priority = priority;
+  }
 
-      getPriority(){
-        return this.priority
-      }
+  getPriority() {
+    return this.priority;
+  }
 
-      setTaskInfo(taskInfo){
-        this.taskInfo = taskInfo
-      }
+  setTaskInfo(taskInfo) {
+    this.taskInfo = taskInfo;
+  }
 
-      getTaskInfo(){
-        return this.taskInfo
-      }
+  getTaskInfo() {
+    return this.taskInfo;
+  }
 
-      setChecked(task_checked){
-        this.task_checked = task_checked
-      }
+  setChecked(task_checked) {
+    this.task_checked = task_checked;
+  }
 
-      getChecked(){
-        return this.task_checked
-      }
-  
-
+  getChecked() {
+    return this.task_checked;
+  }
 }
